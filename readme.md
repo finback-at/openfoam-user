@@ -77,7 +77,9 @@ Edit docker-compose.yml or docker-composer-win.yml.
 ```
 
 ### Mount points of host
+
 Edit docker-compose.yml or docker-compose-win.yml.
+
 workspace.  Default is ${HOME}/workspace.
 
 ```yml
