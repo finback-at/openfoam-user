@@ -1,6 +1,6 @@
 # openfoam-user
 
-Build up openfoam-base image and container with graphic capabilities
+Build up openfoam-user image and container with graphic capabilities
 
 - Python 3.11.13
 - ParaView 6.0.0
