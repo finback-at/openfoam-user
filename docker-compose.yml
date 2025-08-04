@@ -1,0 +1,25 @@
+services:
+  app:
+    build: .
+    image: openfoam-user
+    container_name: openfoam-user
+    tty: true
+    restart: always
+    privileged: true
+    runtime: nvidia
+    user: 1000:1000
+    environment:
+      - DISPLAY=${DISPLAY}
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+      - XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $XDG_RUNTIME_DIR:$XDG_RUNTIME_DIR
+      - ${HOME}/workspace:/home/developer/workspace
+      - ${HOME}/OpenFOAM:/home/developer/OpenFOAM
+      - ${HOME}/settings/jupyter:/home/developer/.jupyter
+    ports:
+      - 9999:8888
+    expose:
+      - "8888"
