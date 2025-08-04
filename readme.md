@@ -90,7 +90,7 @@ OpenFOAM workspac. Default is ${HOME}/OpenFOAM.
  - ${HOME}/OpenFOAM:/home/developer/OpenFOAM
 ```
 
-Jupyter Lab settings. Default is ${HOME}/Settings/jupyter.
+Jupyter Lab settings. Default is ${HOME}/settings/jupyter.
 
 ```yml
 - ${HOME}/settings/jupyter:/home/developer/.jupyter
