@@ -19,6 +19,6 @@ RUN echo "#!/usr/bin/bash" > start.sh && \
     chmod +x start.sh && \
     echo "source /usr/lib/openfoam/openfoam2506/etc/bashrc" >> .bashrc
 RUN pip install xlsxwriter line_profiler ply
-ENV PATH=${PATH}:${HOME}/.local/bin
+ENV PATH=${PATH}:/home/developer/.local/bin
 WORKDIR /home/developer/workspace    
 CMD /home/developer/start.sh
