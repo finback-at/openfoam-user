@@ -1,4 +1,4 @@
-FROM finback9/openfoam-base:0.1
+FROM finback9/openfoam-base:0.2
 
 ARG Uid=1000
 ARG Gid=1000
